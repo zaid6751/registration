@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+        <title> Form.html</title>
+        <style>
+          body{
+            background-color: powderblue;
+          }
+          .form{
+          width: 1170px;
+          margin: auto;
+          }
+          #border{
+            width: 300px;
+          }
+          #btns{
+            margin-top: 20px;
+            margin-left: 80px;
+          }
+          @media only screen and (min-width: 200px) and (max-width: 567px){
+            .form{
+              width: 100%;
+            }
+          }
+        </style>
+</head>
+<body>
+        <form class="form" action="index.html" method="post">
+          <fieldset id="border"><br>
+            <legend><b>Candidate Data<b></legend>
+               <b>Name : </b><input type="text" size="20" placeholder="Enter Your Name" name="name"><br><br>
+               <b>E-mail : </b><input type="text" size="20" placeholder="Enter Your Email" name="email"><br><br>
+               <b>Gender : </b><input type="radio" name="gender" value="Male" checked> Male
+                               <input type="radio" name="gender" value="Female" checked> Female <br><br>
+               <b>Mobile : </b><input type="number" size="20" placeholder="Enter Your Number" name="mob"><br><br>
+               <div id="btns">
+               <input type="Submit" value="Submit">
+               <input type="Reset" value="Reset"><br><br>
+               </div>
+         </fieldset>
+       </form>
+   
+</body>
+
+
+</html>
